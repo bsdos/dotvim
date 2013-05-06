@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/wayne/mygo/src/github.com/astaxie/beedb'
+let g:netrw_dirhist_2='/home/wayne/mygo/src/test/test1'
+let g:netrw_dirhist_3='/home/wayne/.vim/bundle/go'
+let g:netrw_dirhist_4='/home/wayne/.vim/bundle/go/syntax'

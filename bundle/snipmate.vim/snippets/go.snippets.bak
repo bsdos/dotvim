@@ -1,0 +1,18 @@
+#test
+snippet if
+	If ${1:condition} Then
+	${2:; True code}
+	EndIf
+snippet con
+	const ${1:constant} = ${2:value}
+snippet cons
+	const (
+	  ${1:constant} = ${2:value}
+	)
+snippet := 
+	${1:constant} := ${2:value}
+snippet ir
+	if err != nil {
+	  return ${1}err
+	}
+	${2}

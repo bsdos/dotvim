@@ -1,0 +1,81 @@
+#testinit
+snippet testinit
+	package main
+	import(
+	    "fmt"
+
+	)
+
+	func main() {
+	  ${1:codehere}
+	}
+#package
+snippet pkg
+	package ${1:package_name}
+#import
+snippet import
+	import (
+	  "${1:import_item}"
+	)
+#var
+snippet vars
+	var (
+	  ${1:varname} = ${2:value}
+	)
+snippet var
+	var ${1:varname} = ${2:value}
+#if
+snippet if
+	if ${1:condition} { 
+	${2:; True code}
+	}
+#const
+snippet con
+	const ${1:constant} = ${2:value}
+snippet cons
+	const (
+	  ${1:constant} = ${2:value}
+	)
+snippet := 
+	${1:constant} := ${2:value}
+#if err != nil
+snippet ir
+	if err != nil {
+	  return ${1}err
+	}
+	${2}
+#function
+snippet func
+	func ${1:func_name}(${2:in} ${3:type}) ${4:returntype} {
+	  ${5:codehere}
+	}
+snippet funcs
+	func (${1:name} *${2:type}) ${3:func_name}(${4:in} ${5:type}) ${6:returntype} {
+	  ${7:codehere}
+	}
+snippet main
+	func main() {
+	  ${1:codehere}
+	}
+#for
+snippet for for..start; condition; count..{}
+	for ${1:start}; ${2:condition}; ${3:count} {
+	  ${4:codehere}
+	}
+snippet for for..condition..{}
+	for ${1:condition} {
+	  ${2:codehere}
+	}
+#type
+snippet type
+	type ${1:name} ${2:type}{
+	  ${3:codehere}
+	}
+snippet struct
+	type ${1:name} struct {
+	  ${2:codehere}
+	}
+snippet interface
+	type ${1:name} interface {
+	  ${2:codehere}
+	}
